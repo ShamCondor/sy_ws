@@ -1,0 +1,8 @@
+prefix=/home/ares/sy_ws/install
+
+Name: run
+Description: Description of run
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ares/sy_ws/install/lib 
+Requires: 

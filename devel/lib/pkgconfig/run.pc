@@ -1,0 +1,8 @@
+prefix=/home/ares/sy_ws/devel
+
+Name: run
+Description: Description of run
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ares/sy_ws/devel/lib 
+Requires: 

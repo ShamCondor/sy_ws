@@ -1,0 +1,71 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ares/sy_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3755451885/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3755451885.dir/build.make CMakeFiles/cmTryCompileExec3755451885.dir/build
+make[1]: 正在进入目录 `/home/ares/sy_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ares/sy_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3755451885.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3755451885.dir/CheckSymbolExists.c.o   -c /home/ares/sy_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3755451885
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3755451885.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3755451885.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3755451885 -rdynamic 
+CMakeFiles/cmTryCompileExec3755451885.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3755451885] 错误 1
+make[1]:正在离开目录 `/home/ares/sy_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3755451885/fast] 错误 2
+
+File /home/ares/sy_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ares/sy_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2404358509/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2404358509.dir/build.make CMakeFiles/cmTryCompileExec2404358509.dir/build
+make[1]: 正在进入目录 `/home/ares/sy_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ares/sy_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2404358509.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2404358509.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2404358509
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2404358509.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2404358509.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2404358509 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2404358509] 错误 1
+make[1]:正在离开目录 `/home/ares/sy_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2404358509/fast] 错误 2
+
+
+Determining if the include file pgm.h exists failed with the following output:
+Change Dir: /home/ares/sy_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2673045603/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2673045603.dir/build.make CMakeFiles/cmTryCompileExec2673045603.dir/build
+make[1]: 正在进入目录 `/home/ares/sy_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ares/sy_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2673045603.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wno-deprecated    -o CMakeFiles/cmTryCompileExec2673045603.dir/CheckIncludeFile.cxx.o -c /home/ares/sy_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/ares/sy_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:17: fatal error: pgm.h: 没有那个文件或目录
+ #include <pgm.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2673045603.dir/CheckIncludeFile.cxx.o] 错误 1
+make[1]:正在离开目录 `/home/ares/sy_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2673045603/fast] 错误 2
+
+
